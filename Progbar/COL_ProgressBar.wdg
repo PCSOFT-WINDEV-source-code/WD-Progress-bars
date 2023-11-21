@@ -1,0 +1,374 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_ProgressBar
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x16e80abe010783fa
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1+
+      CONSTANT
+      	// Types of progress bar
+      	PROGBAR_SIMPLE = 0
+      	PROGBAR_DOUBLE = 1
+      	
+      	// Methods for time calculation
+      	PROGBAR_TIME_NONE = 1
+      	PROGBAR_TIME_AUTO = 2
+      	
+      END
+      
+      // Array of active progress bars
+      garrProgressbars is array of CProgBarManagement dynamic
+      // Index array to easily find a progress bar in garrProgressBars from its identifier
+      gaaIndexProgressBars is ASSOCIATIVE ARRAY of int
+      
+     type : 720896
+  procedures :
+   -
+     name : ProgressBarCreate
+     internal_properties : CAAAAAgAAAAM34km+p2LM0Jafr/gijXeTImHicFj7lFu9FrqtgEK91qgYssHbROYrXPWPQuCRnMMZ684xbe6oq1nscH9xKapdVr2FWTPC1MVk/+hO52w5+vn7IjZ6fSvrcAYUpDA0PhZ/QJLYO5TzRKT4VFwJvmoQ216mG+7u8SECyh/lCtC1H7uDeo=
+     procedure_id : 1650581074608686074
+     type_code : 15
+     code : |1-
+      // Summary: Creates a new progress bar
+      // Syntax:
+      //[ <Result> = ] ProgressBarCreate (<nProgressBarMode> is int, <bAbandon> is boolean, <nTimeCalculation> is int, <sTitle> is string)
+      //
+      // Parameters:
+      //	nProgressBarMode (integer): Type of progress bar (PROGBAR_SIMPLE or PROGBAR_DOUBLE)
+      //	bAbandon (boolean): Will the Abandon button be displayed
+      //	nTimeCalculation (integer): Automatic calculation and display of estimated remaining time
+      //	sTitle (ANSI string): Title of the progress bar
+      // Return value:
+      // 	integer: Identifier of the created progress bar
+      //// Automatic process of errors:   run the block of code CASE ERROR
+      //
+      
+      PROCEDURE ProgressBarCreate( nProgressBarMode is int, bAbandon is boolean, nCalculateTime is int, sTitle is string )
+      
+      // Create the object for managing the progress bar and add into the array
+      clProgressbar is CProgBarManagement(nProgressBarMode,bAbandon,nCalculateTime)
+      clProgressbar.p_Title = sTitle
+      nIndex is int = Add(garrProgressbars,clProgressbar)
+      gaaIndexProgressBars[clProgressbar.ProgresBarID] = nIndex
+      
+      // Returns the identifier of the progress bar
+      RESULT clProgressbar.ProgresBarID
+      
+      CASE Error:
+      ErrorPropagate()
+      RESULT 0
+     type : 458752
+   -
+     name : ProgressBarChangeBound
+     internal_properties : CAAAAAgAAAAM34km+p2LM0Jafr/gijXeTImHicFj7lFu9FrqtgEK91qgYssHbROYrXPWPQuCRnMMZ684xbe6oq1nscH9xKapdVr2FWTPC1MVk/+hO52w5+vn7IjZ6fSvrcAYUpDA0PhZ/QJLYO5TzRKT4VFwJvmoQ216mG+7u8SECyh/lCtC1H7uDeo=
+     procedure_id : 1650581074608751610
+     type_code : 15
+     code : |1-
+      // Summary: Defines the upper bound of the progress bar
+      // Syntax:
+      //ProgressBarChangeBound (<nProgressBarID> is int, <nMainUpper> is int)
+      //
+      // Parameters:
+      //	nProgressBarID (integer): Identifier of the progress bar
+      //	nMainUpper (integer): New upper bound
+      // Return value:
+      // 	None
+      //// Automatic process of errors:   run the block of code CASE ERROR
+      //
+      
+      PROCEDURE ProgressBarChangeBound( nProgressBarID is int, nMainUpper is int )
+      
+      IF ProgressBarExist(nProgressBarID)=False THEN
+      	ErrorThrow(1,"The progress bar does not exist.")
+      	RETURN
+      END
+      
+      garrProgressbars[gaaIndexProgressBars[nProgressBarID]].p_SimpleUpperBound = nMainUpper
+      
+      CASE Error:
+      ErrorPropagate()
+      RETURN
+     type : 458752
+   -
+     name : ProgressBarDisplay
+     internal_properties : CAAAAAgAAADWFXNwxM9dHR5UHJPE06vQDl0ZY33pCW+k+qwgaEswO6Yk0EJZyElCMFGMDm1qFErDCzRrhaBmwqKqsBjiu1+AL9Pjjpyn6nPog84IUDCX6O2u84ylWRwXhp0FNKrYriJ14U6PLMofzUJ3RSl862JzmAL560QSA0LEhzxNel2QplA4x6A=
+     procedure_id : 1650581074608817146
+     type_code : 15
+     code : |1-
+      // Summary: Manage the display of progress bars
+      // Syntax:
+      //ProgressBarDisplay ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //// Automatic procedure:
+      // The procedure is automatically run, after the initialization code of the project, with a time-out set to 1 seconds
+      // It will be repeated in loop, with 50 hundredths of a second between each call
+      // Each following call runs the procedure once, without timer
+      // 
+      PROCEDURE PRIVATE ProgressBarDisplay()
+      
+      // Open the window for displaying progress bars if it is not opened yet and if progress bars exist
+      IF WinStatus(WIN_ProgressBars)=NotFound _AND_ garrProgressbars..Occurrence>0 THEN
+      	OpenChild(WIN_ProgressBars)
+      	WinStatus(WIN_ProgressBars,Above)
+      END
+      
+      IF garrProgressbars..Occurrence>0 THEN
+      	// Refresh the display of the window of progress bars
+      	ExecuteProcess(WIN_ProgressBars, trtRequestUpdate)
+      END
+      
+      // Automatic closing when there is no progress bar to display
+      IF garrProgressbars..Occurrence=0 _AND_ WinStatus(WIN_ProgressBars)<>NotFound THEN
+      	Close(WIN_ProgressBars)
+      END
+     type : 458752
+   -
+     name : ProgressBarMove
+     internal_properties : CAAAAAgAAAAM34km+p2LM0Jafr/gijXeTImHicFj7lFu9FrqtgEK91qgYssHbROYrXPWPQuCRnMMZ684xbe6oq1nscH9xKapdVr2FWTPC1MVk/+hO52w5+vn7IjZ6fSvrcAYUpDA0PhZ/QJLYO5TzRKT4VFwJvmoQ216mG+7u8SECyh/lCtC1H7uDeo=
+     procedure_id : 1650581074608882682
+     type_code : 15
+     code : |1-
+      // Summary: Moves a progress bar forward
+      // Syntax:
+      //ProgressBarMove (<nProgressBarID> is int [, <nStep> is int])
+      //
+      // Parameters:
+      //	nProgressBarID (integer): Identifier of the progress bar
+      //	nStep (integer - default value=1): Number of steps for the move
+      // Return value:
+      // 	None
+      //// Automatic process of errors:   run the block of code CASE ERROR
+      //
+      
+      PROCEDURE ProgressBarMove(nProgressBarID is int, nStep is int = 1)
+      
+      IF ProgressBarExist(nProgressBarID)=False THEN
+      	ErrorThrow(1,"The progress bar does not exist.")
+      	RETURN
+      END
+      
+      IF garrProgressbars[gaaIndexProgressBars[nProgressBarID]].p_ProgressBarType = PROGBAR_SIMPLE THEN
+      	garrProgressbars[gaaIndexProgressBars[nProgressBarID]].p_SimpleValue += nStep
+      ELSE
+      	garrProgressbars[gaaIndexProgressBars[nProgressBarID]].p_DoubleValue += nStep
+      	// When the progress bar reaches the max value of the step, it goes to the next step
+      	IF garrProgressbars[gaaIndexProgressBars[nProgressBarID]].p_DoubleValue = garrProgressbars[gaaIndexProgressBars[nProgressBarID]].p_DoubleUpperBound THEN
+      		garrProgressbars[gaaIndexProgressBars[nProgressBarID]].p_SimpleValue += 1
+      		garrProgressbars[gaaIndexProgressBars[nProgressBarID]].p_DoubleValue = 0
+      	END
+      END
+      
+      // When the progress bar reaches its max value, it is automatically closed
+      IF garrProgressbars[gaaIndexProgressBars[nProgressBarID]].p_SimpleValue = garrProgressbars[gaaIndexProgressBars[nProgressBarID]].p_SimpleUpperBound THEN
+      	ProgressBarClose(nProgressBarID)
+      END
+      
+      CASE Error:
+      ErrorPropagate()
+      RETURN
+     type : 458752
+   -
+     name : ProgressBarAskForCancelation
+     internal_properties : CAAAAAgAAAAM34km+p2LM0Jafr/gijXeTImHicFj7lFu9FrqtgEK91qgYssHbROYrXPWPQuCRnMMZ684xbe6oq1nscH9xKapdVr2FWTPC1MVk/+hO52w5+vn7IjZ6fSvrcAYUpDA0PhZ/QJLYO5TzRKT4VFwJvmoQ216mG+7u8SECyh/lCtC1H7uDeo=
+     procedure_id : 1650581074608948218
+     type_code : 15
+     code : |1-
+      // Summary: Asks to cancel a progress bar (used by the click on the Cancel button)
+      // Syntax:
+      //ProgressBarAskForCancelation (<nProgressBarID> is int)
+      //
+      // Parameters:
+      //	nProgressBarID (integer): Identifier of the progress bar
+      // Return value:
+      // 	None
+      //// Automatic process of errors:   run the block of code CASE ERROR
+      //
+      
+      PROCEDURE ProgressBarAskForCancelation(LOCAL nProgressBarID is int)
+      
+      IF ProgressBarExist(nProgressBarID)=False THEN
+      	ErrorThrow(1,"The progress bar does not exist.")
+      	RETURN
+      END
+      
+      garrProgressbars[gaaIndexProgressBars[nProgressBarID]].p_AbandonRequested = True
+      
+      CASE Error:
+      ErrorPropagate()
+      RETURN
+     type : 458752
+   -
+     name : ProgressBarClose
+     internal_properties : CAAAAAgAAAAM34km+p2LM0Jafr/gijXeTImHicFj7lFu9FrqtgEK91qgYssHbROYrXPWPQuCRnMMZ684xbe6oq1nscH9xKapdVr2FWTPC1MVk/+hO52w5+vn7IjZ6fSvrcAYUpDA0PhZ/QJLYO5TzRKT4VFwJvmoQ216mG+7u8SECyh/lCtC1H7uDeo=
+     procedure_id : 1650581074609013754
+     type_code : 15
+     code : |1-
+      // Summary: Closes a progress bar (even if it is not ended)
+      // Syntax:
+      //ProgressBarClose (<nProgressBarID> is int)
+      //
+      // Parameters:
+      //	nProgressBarID (integer): Identifier of the progress bar
+      // Return value:
+      // 	None
+      //// Automatic process of errors:   run the block of code CASE ERROR
+      //
+      
+      PROCEDURE ProgressBarClose(nProgressBarID is int)
+      
+      IF ProgressBarExist(nProgressBarID)=False THEN
+      	ErrorThrow(1,"The progress bar does not exist.")
+      	RETURN
+      END
+      
+      nIndexDel is int = gaaIndexProgressBars[nProgressBarID]
+      Delete(garrProgressbars,nIndexDel)
+      FOR EACH nIndex of gaaIndexProgressBars
+      	IF nIndex>nIndexDel THEN
+      		nIndex--
+      	END
+      END
+      
+      Delete(gaaIndexProgressBars,nProgressBarID)
+      
+      CASE Error:
+      ErrorPropagate()
+      RETURN
+     type : 458752
+   -
+     name : ProgressBarCancelationRequested
+     internal_properties : CAAAAAgAAAAM34km+p2LM0Jafr/gijXeTImHicFj7lFu9FrqtgEK91qgYssHbROYrXPWPQuCRnMMZ684xbe6oq1nscH9xKapdVr2FWTPC1MVk/+hO52w5+vn7IjZ6fSvrcAYUpDA0PhZ/QJLYO5TzRKT4VFwJvmoQ216mG+7u8SECyh/lCtC1H7uDeo=
+     procedure_id : 1650581074609079290
+     type_code : 15
+     code : |1-
+      // Summary: Indicates whether the cancelation was requested for a progress bar
+      // Syntax:
+      //[ <Result> = ] ProgressBarCancelationRequested (<nProgressBarID> is int)
+      //
+      // Parameters:
+      //	nProgressBarID (integer): Identifier of the progress bar
+      // Return value:
+      // 	boolean: True if "Cancel" was clicked by the user
+      //// Automatic process of errors:   run the block of code CASE ERROR
+      //
+      
+      PROCEDURE ProgressBarCancelationRequested(nProgressBarID is int)
+      
+      IF ProgressBarExist(nProgressBarID)=False THEN
+      	ErrorThrow(1,"The progress bar does not exist.")
+      	RESULT False
+      END
+      
+      RESULT garrProgressbars[gaaIndexProgressBars[nProgressBarID]].p_AbandonRequested
+      
+      CASE Error:
+      ErrorPropagate()
+      RESULT False
+     type : 458752
+   -
+     name : ProgressBarCloseAll
+     internal_properties : CAAAAAgAAAAM34km+p2LM0Jafr/gijXeTImHicFj7lFu9FrqtgEK91qgYssHbROYrXPWPQuCRnMMZ684xbe6oq1nscH9xKapdVr2FWTPC1MVk/+hO52w5+vn7IjZ6fSvrcAYUpDA0PhZ/QJLYO5TzRKT4VFwJvmoQ216mG+7u8SECyh/lCtC1H7uDeo=
+     procedure_id : 1650581074609144826
+     type_code : 15
+     code : |1-
+      // Summary: Close all the progress bars (even if they are not ended)
+      // Syntax:
+      //ProgressBarCloseAll ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //// Automatic process of errors:   run the block of code CASE ERROR
+      //
+      
+      PROCEDURE ProgressBarCloseAll()
+      
+      DeleteAll(garrProgressbars)
+      DeleteAll(gaaIndexProgressBars)
+      
+      CASE Error:
+      ErrorPropagate()
+      RETURN
+     type : 458752
+   -
+     name : ProgressBarExist
+     internal_properties : CAAAAAgAAAAM34km+p2LM0Jafr/gijXeTImHicFj7lFu9FrqtgEK91qgYssHbROYrXPWPQuCRnMMZ684xbe6oq1nscH9xKapdVr2FWTPC1MVk/+hO52w5+vn7IjZ6fSvrcAYUpDA0PhZ/QJLYO5TzRKT4VFwJvmoQ216mG+7u8SECyh/lCtC1H7uDeo=
+     procedure_id : 1650581074609210362
+     type_code : 15
+     code : |1-
+      // Summary: Checks the existence of a progress bar
+      // Syntax:
+      //[ <Result> = ] ProgressBarExist (<nProgressBarID> is int)
+      //
+      // Parameters:
+      //	nProgressBarID (integer): Identifier of the sought progress bar
+      // Return value:
+      // 	boolean: True if the progress bar exists
+      //// Automatic process of errors:   run the block of code CASE ERROR
+      //
+      
+      PROCEDURE ProgressBarExist( nProgressBarID is int )
+      
+      RESULT gaaIndexProgressBars[nProgressBarID]>0
+      
+      CASE Error:
+      ErrorPropagate()
+      RESULT False
+     type : 458752
+   -
+     name : ProgressBarChangeStep
+     internal_properties : CAAAAAgAAAAM34km+p2LM0Jafr/gijXeTImHicFj7lFu9FrqtgEK91qgYssHbROYrXPWPQuCRnMMZ684xbe6oq1nscH9xKapdVr2FWTPC1MVk/+hO52w5+vn7IjZ6fSvrcAYUpDA0PhZ/QJLYO5TzRKT4VFwJvmoQ216mG+7u8SECyh/lCtC1H7uDeo=
+     procedure_id : 1650581074609275898
+     type_code : 15
+     code : |1+
+      // Summary: Changes the number of secondary steps for a double progress bar
+      // Syntax:
+      //ProgressBarChangeStep (<nProgressBarID> is int, <nSecondaryUpper> is int)
+      //
+      // Parameters:
+      //	nProgressBarID (integer): Identifier of the progress bar
+      //	nSecondaryUpper (integer): Upper found of secondary steps
+      // Return value:
+      // 	None
+      //// Automatic process of errors:   run the block of code CASE ERROR
+      //
+      
+      PROCEDURE ProgressBarChangeStep( nProgressBarID is int, nSecondaryUpper is int )
+      
+      IF ProgressBarExist(nProgressBarID)=False THEN
+      	ErrorThrow(1,"The progress bar does not exist.")
+      	RETURN
+      END
+      
+      garrProgressbars[gaaIndexProgressBars[nProgressBarID]].p_DoubleUpperBound = nSecondaryUpper
+      
+      CASE Error:
+      ErrorPropagate()
+      RETURN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x1006a0c530d92cb9
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

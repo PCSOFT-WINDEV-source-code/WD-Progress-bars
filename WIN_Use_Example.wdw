@@ -1,0 +1,386 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Use_Example
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_Use_Example
+ identifier : 0x26e80abc05157c59
+ internal_properties : CAAAAAgAAAAXtgvnUIXTwb4mIBznkBVFo08IHHpub0JvdOzaZnZtON0P0yAtRi3vhjpM0K9nOBrUcH5sZJ5UUImawgfrgFOWvprFs9h9g/5F5LChuEpF9+gJ1M66Deylb87nsgkYU2jsJxZVh+0y97UG3SHCiQIrZ+czufl52oYy4h9VCklnSP3U5RlRwmVI7cxhDbgMpAHITsuk/bpTZGsaPHHCWT1lwvkZT25pOtlBuslWdTW/bugBiwbV0XfyIjIQnWIkICSwgkALNX9ID8pI3DbmGZvtFf9/8r9zz/+2u6ZrEVLQm+4znTmaDvMjgB3vJn9FZ1WQkzyruoBu9qHxtuXKxj6ltKLvZp1npzOYLAZ6bcJd6eE5z276HaZme7qO/1B76yY3vIDh5/6ulM3emeHWXFhlOU+JPzUK8A7uiZMjrr3fT2i0K/bbwsu1AAbuLCHaochT8VQqNaqNBA6/RGe0yZPPpWSio61+e9TcdFlUYdTTxiiIwWvtSg72VIxclfYN3GoQDtkXZdqnq7Y4sDFCBa8M3gD7siGbpIuIeBiFkncMrhCW6yRDoiDzMRF7ehO0/34Tb1IJ1+n5xBqNE+88sYMfZCs+Mv3GSJ1ileCZrKCfgBfH53jbLWOLzZQDEyrJoUcy/nxlDAUBm3jGGZcU7nzwRGIE79bX6wOF7N2hVH7blzfe1WAN4EMmKCZ3odp7HyYvt1oXmKmfiFc+b+UAGOXH9SU6AA6nxNR0iVIBoTOxr06vJvmvT49YvLLRpoT9R2jzZK9HpuLjsdUjC5AZ6AGY52EVyIyV6ZDqvXar3uCcpO2IYQgMWoKiaBUL/hxLRMzi5N2RMcBZn3zWDrgT73D8EQ==
+ properties :
+  width : 815
+  height : 487
+  widthClient : 813
+  heightClient : 455
+ controls :
+  -
+    name : RADIO_ProgressBarType
+    identifier : 0x26e80abc05167c69
+    internal_properties : CAAAAAgAAABZYBQXR1mwxAex9xBUWm3ctswa+SoNGk8Qp5pKEidjeoxhD4tKFEjj4/Z+5knInvuDZqZfwFLF97PXvnNGY0SUpgLJxX21v31HBmArpUm09pEN+uNJ8FA/hTPVQCgWHbtJkHqFJLZItRI4hhV0BlnAM6VelKSj1WvdSiPrf5SuGIPRdep59KlWFn9eC+2g3Bunb2OJrnJwhCQHOEqxDJ296X2+svrsbTO4WLGRgZbkzxSIxX/NWcD3MutC3JwZasoN+odbGwArCJiGe1MnDn70qhS6qfwpj3Bkg6Dexz1Jt4jOrOHXe4nn9vdHpP9K8H+MnfX43mTa8HI6Snn0n+aSENGapX4BCVIj/pYoIjZzfoZVQnArBEVJ1MJFCK3WmEvBwPZBQAOqkdpDCdnLU7WhBVQ1UArOJ2eZ9UqnCphj3DWD6qeGhhUYCxdaeE4mEDrmdzT/5xuEm+xVblX46udmoXb3yDI+TJjF5WD3wD8p0vI6Q8zOcCBa7NzAiVqk4+C9nwGhPhL9+0s/l2WftyTEW9sAsL4e2DwvDVo2yu/IVCZbxu+595WWSYyWdQH5UDvkInHHD3UDAjcBJWhc05bKn4ieWr7aZ0dGjKOJVyUYZRZoMeG8+/NOJpvT3XHPKu8GZygfjUYi5+PvbHeo1QEZFfIfa6ip0udnryDLKwTVIfrfWnpu/U5DJPqdMZeUVU7NhpG4ux49CaLYG9NeuAVI9xdnrOTLQoaY6s7oIw+w82oaYL1m7KLajdcSgwmFa33jmFgBRbwwqhzyfcxg0aFar0oahm2s+H9191pmlpzheqPdE1EhbIkKEDMgHkwf8nsq1WxfvsmQ9Md/fGIowhWk9E76Ig8tVweKdL9NxwMULlrK3wDznYmwsXrC+/awJuk4lClWkNoaiSNF1Hw71nw1BbW3dVzjLJdsA1hX+r+weqFXKZZli5ZdVUaKGffkeBPy5OR9/SN9pyd5BlRFJEEUhWLw3mK+IqEOfYQ0W6F7ZxY/OUmAz757Jzr759AH7c/+ATcgL/5Z0fjy0m133xRCsDtDPVTElvtbZQgaEBFe8EDUH9MLoNfZPlACVsWKdnO75h0IE5X0rQbTx81q3MB92gDSqu2nqAnAOIsOrSDP3oDSrBaZPrp8GrKRw7z7U27A0P9sq9AYDqULm+X1vmZ8oVwmQZw7
+    properties :
+     x : 386
+     y : 32
+     width : 209
+     height : 43
+    options :
+     -
+       internal_properties : CAAAAAgAAAB7XtaMhvojdVIQ+o4sW2brVLdhcLQjNa5UxqXBEDUlPjV6ahYhVic0/0RNSgPD24L6paUJ55A4MAeaKhU6LdLADsJupzCKxl29odyjGv7kjW48NxZbu4rpmusCL4dSlof3SK/WYO+Ht6CICty1u+qkCjqf80/W9frEr++JM6xPpXv8jEn5ecvYq3+dOg==
+     -
+       internal_properties : CAAAAAgAAAAw/L01/sOxY3GeVteJdhHSSSj5CgF+noksAOVnX6pJoVEzjHLMm3eLFhviX2/iy1GefLBUxTU4sSPTWBiPnoUtMYHiGGfdr1Vm8bacT46nbfoyruNoBbNBn2mKvmz0K+1BGKCBld8w6bUuo6S7Glq9iXuth5crE1ciNGZrBTWL9Hz35LvBQLg7JS1Za58=
+    type : 6
+    controls : []
+    code_elements :
+     type_code : 6
+     p_codes : []
+  -
+    name : STC_Type_of_progress_bar
+    identifier : 0x26e80abc05197c69
+    internal_properties : CAAAAAgAAADwrry35rYacwhhnESpDJNOW2dhWGk+3jrAQglLfZtiznb2W5tMBzf0AU6y/EV+H6M3pIp5yLUD5mymP5uY9fewNEQ+JIfI8sNxV2h6SxZ3OJIHBsQMiyS3XfFs5h04xCPY9jj/8eTUwqCsctZqZopinL7FZVozspjCBCnplBBCcTj3h7a7jQBpTxpbxvIpq7au8Nh6AYGOpE8gyYI/1K9c2qFU64apa63wrXcOQ8dTT4mKQ0VRUySHr7f0+KxspUS4ARs2QloRWS0ZbTxfus1Wd6yFvYmj9CDHv1fynxCdIbJxTFa8cgjt+KIa+t+XZ9JxnbnTgeXQtY8xQ2WF+SPvqJgORNwlk2yZYkQloggGH6iEvC07fvBfgE3liYcbKtlDoJQVX4GkqjZI6ug4nZ9Km0b8EzyIPWtBH92Vvk/x9DFXMUKwUImuqGcJQ/igMOVH2jWtXV/KG6jEp1l6Ej/kH6GejMmsQy3tTtRF5dMNGsZ3+XZGeAK9NDHdK8TtMrGw38Wht4ThcA==
+    properties :
+     x : 386
+     y : 6
+     width : 421
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : STC_Managing_the_abandon_in
+    identifier : 0x26e80abc051a7c69
+    internal_properties : CAAAAAgAAAA7gRzg/lrN4QRg64vJBwZPGHSUAaVYksdmZ0DRwmynH1VFp5eTJkNRdU0Wh1LXRHe5Uf4X1WHIqDq9or3vbto+6g5VoakVC7I5lnOTtbuaqmlY/DLDb7uYC2mwjv3l0Rjzo6KLeQhzSA4vaVFEN0tKFa2O+Li+j3S64jL/JlASOwf3naoskM7cRqFjchd5nadZ6oSdhtKNA3vyXgXe37Rf9adPSeZnPyhh0V28WXeXBZZL2tECLwtLacq4mF/4zUh6xxf9U8n7eJa5Nk3xVYc1CoALQewAb9XtUA+00lCwwsqlGw1xXBSIAWkhmZq8rJAe+b7MTaihe+0GD63MyPET8N7LXVxPMoRXAvlhi+OKrmXqkfDE+gsD3ngoqTmtQClPwkSfAW0zWG4RQJBg23UQrY4+vorbnP7ITI/R0SejNoeqiEmuaazlZ1ywUVoNJ4117SMjPXydgFaXtPVS7dNILqVT4Xs9f0UxmV13q8sKu00WDJ2M78tOPgkeOmUvx4oWtw2/gXfgNj1wezuEMZV4DYFxSXDb8ldlio/acIeZ35Qe/zq81w==
+    properties :
+     x : 386
+     y : 97
+     width : 421
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : RADIO_Cancel
+    identifier : 0x26e80abc051b7c69
+    internal_properties : CAAAAAgAAAAIBiXjznsjgwW3s/r4DV1dkSI8tIUSV2y6iUIaFOMJppIKFy70WoSWRde7ZKNV84OHBRF0CGa4buZkwmwAIvYh1lLOATXrbW56AUETCIDYXX8+j8AHCAexcvvKCVZx3j/ivuh1QanZZGw9Oh+AWNil2Ht/TX2wnW4AcyWmemogPpvcB05mrWfZpkJuCqopnLuD2vjxrVAYTab7SgDDmQ7LVqmz3E0+GgvdeIcnJLPqB99PNzgl3QS0rkWXiS1Umr1i0ni7oGL0DEDKmb7muKGNV7o6IYg2K9S0d8wK+wMPW2d9pZBpgo3au1ZcS2ZPeFpqNfvXBOiicmEVoFC6pjJ5sRWQn6wyKh5rFwcDbzbxHVwrB2DBgDf9U5FuPaNDLPfg3mbqf36bZ4gTC6jbk7YwQ+lTZt1BeIFKhM5NF1wqniewoSrPNsqHMS06wt3nj9yKG9jn20i+eXDMPe7M4GkqVB2uEivHvdEiGXfnQaVjV51goBBy+xvmnKXHafh9WC7v3oheXeX4f/qenFrbQE5Yk4U1gsny6mFx4neSzLFAZWKGMXrBzRgmwgp7pmZcNHsA6Lxt/Spi6gNLZaznntw17/wLuLSRXbDxwm21AGkU8n0BXPtw2t7hyggdj7hnBi1f9U6K1JBh89zeIAD0a6GtZs/HgL0WAE/ZLc2tmlSB/KHf0wo6q/eRmyYdnufXmop5trtJWvaciYBz7Q7PUc8RWMzF3hepa0/7eW7OZnnCOj8DMe/ftC5yKRe7+LT703Touoo4o+nFDIazMJmQk0/WweZ0PkYrUgwnu6VWpy4bDDaB/LSkE/fNI6+cL0AGcuy1ucfPQe9LwW2YuAv17VGYiDL9FyycN2QZDxSeSRwoSDxFpWSPQq/Yje91agBB0tf1ora3sux6pq3U0LP5s4dFQQ89mwnwLRJhrOlMEWUUWhQh/gzNbkw67fsQrYl6CBoP9iep5z8JDU76/HcfW9YTINethlmEgmZFnvysrCvStYoHSKKQs96x49LfUxwSruwe0kmaG8Ue14l0spa7YMcLtL9JB8S2ZUaMqydJWb9puBnhIb4zKaewQ4w7uRxb6Msc3txm1Gklva6OD1Ex5XbEWSJtFvxGP7Fj7NMeLmDlybm92Tpch0xzhJXol21Ul9jMzlx3y0yx2BO/bd+t2Ez586aiNFa0IeA=
+    properties :
+     x : 386
+     y : 123
+     width : 421
+     height : 43
+    options :
+     -
+       internal_properties : CAAAAAgAAAAKz4zTZ/2pJhDduzpbG9BoMSyb8ZY9RFQDl9d/JTJttH4Bv4VKBiCAofxa09G3cGV35PujEwJZeQKDsY7yMbNZpRf+mTQuk3bfExnPmkIVycd3EJhSNunF6AE3ZyMiX0Oo95BAQWjo5RyMZ5vm2VusJ3qdZRuA/riAp+Sj5KZlh0dUXwBnGUayC6J7EWX4JeY=
+     -
+       internal_properties : CAAAAAgAAABp3HQZFTsynOIdtwuJVaBjdxn+F5lFN04Luipdsq7GGc0QbXKraynA81BF8RrUbylw5L9srvQfo2pi5hUCfWoLeRrAqebTbVKF6VYknZnwp2p0P8VdXOhwqoW7rv2dtBWLV3B99OohgHimBNNKbC4ijjXyDJY/EzJNivuDNwBxHTDh943hPu7QgTKwrdfTlkNMLAli0SXOw/KaVj6NSWhr9hipGawWYtH5AMg=
+    type : 6
+    controls : []
+    code_elements :
+     type_code : 6
+     p_codes : []
+  -
+    name : STC_Displaying_the_remaining_time
+    identifier : 0x26e80abc051e7c69
+    internal_properties : CAAAAAgAAABSoQyguFhmFrSAMhyYASkP9iLr+b207k2/d8tAqSdBHHZKaWWN8jQWnoyPDi0OGInHg88cJQ7/Wy+rffGZ01CDDIgx2nkdPVEWYuMAX2b21o2yBRwQmu0bebNErnPkw4OET9XmrTTuEZGMWUJZfP7j5zRx9eWChAUpYUprfS4bAFKCfdYqGXWVpKtP4pMHXLEU+PbK4fXmfSVDmX8vTzDIsT7Ki+8yYwoj36EQSZ09koFLEYHcD8cCI+uWwP1U1cZ62h0h96SYkOnAowyKTjAkKZL8E9FmAwd3Yt+ssvSyzDIFLy6OrcckuO+c7riBBr3iettcpJFGuTgdtH4taNcXo2dewbkhCbSa7u2O6vMAJR9HlBKclNDDjVX4wE/6vlGgATjMxh0G4OE4A2H+JYNAsmNkY671QRqpWj1NKzR8WaWNTVG5mBUQeYF8xy2POB8GNO5QfG+C4GM0CwNNcU8bXzm4nHDByraZoj9eoZrpbn8vKvFS3kyp2/XCSDwQH8qMpQOjDficJTa8cBVB
+    properties :
+     x : 386
+     y : 200
+     width : 421
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : RADIO_CalculateTime
+    identifier : 0x26e80abc051f7c69
+    internal_properties : CAAAAAgAAADt8v+DYsNcTwjxUwrrSqxjSsSrdk7PUw5S1wwYeQowJcHkrYcsSCgQPRPoWXCG7SF+7zOFU66n3kox+rZneAUdIFZ5uZSNMEQIewJklFKSLCchI4HZ0ofUVcLISkEmHZ+rmL3i/yKKyJaQ2vDQdKOX3w0UCjoEnIT5YPYoLXez48acAfB1Zr5oiVsltjZUI9QViL3XDzu0BeumUiRHvs/o0bsD1b1VB9TlFonMacXTTZhN9vA0n7/8tqEU5utt1JthrQTd9YxKOwuBCPmyJ5Fmb1Ci/aeFf1O1cy84kFo+VCtuDeXDiw3Hr/FG1cQyjPI00pLcZCoQmGuy4qsyr14XX77wnkaYhASgCbI9PwUCkCUAHLsgXdR1sGnxfhKtv3J1X1NygAro0w81bI7mvsaz2OauKL22MCSsJbXGCNPNw/w8bK0qdCpBrKDIKi97lyG1rOy5NBpnBKWMhM6EXGNRP5tJsBvroqLiaCBWK5TXHBsRE/1YVWCseFIfhLUr+KB5YaTWrw4gleKk5mnXW/rF3prf4jkbPtVJUnDfuELgmRqCYphyv5M/USVBr9RZDfdBIhpg5VkWrgaUgpS7lAP5Me9gzyeyp6M3ZfSCWt1dQu00rQbV2UTa4C8Khgb/8y+lxgORTfurYFjrKeOGa+IfEICeTe7p6krnLDgelPQKym1cwCEfGtWyrWUo5/1PYfxTPVreKZPIsOb4pvF7T6oVIJ2Ug46mh3AfPkkHTsNvRC3KCNxo7/oHh1hU845vWKbcBVXZAOjd055IdzZEdYCATT3nXzO6juspStB/b1hihvK0O4nHTEuSuTJpznRgvUxxLjZ8AOQZArunrwDzaaAC8GcgeG/FK7ELdNFNXboZnu688FWGnxVhESQmpTTHUxc1mWF4e1+Cr7FFR9Avw2j/FyhWrlI7zQepVTqfg5XjtKrKU4u2uX6RQwRvWp/+ywafibgkUBIPBEp1W3yLaf87SCgWGZQ9LJFXnT+NotufQRTGzw+pPvqK690iNLIeTziINe5RXHC2Zq2Fu1n3zlL7IpAuHiGVU/FenA5+4Z2Get9etD+8bHlFc92WQgSiZehjk1zS7XM+NtVEmADwoRwTgwKxqjbZjQXbK8hyAVdxAah51UrXXfWiEvEgcy4cPVY2z6xA78ehBonhRqX0hvq3ABZHlVfVg2AvBw==
+    properties :
+     x : 386
+     y : 226
+     width : 421
+     height : 90
+    options :
+     -
+       internal_properties : CAAAAAgAAADNXhR8P09/Pmnlwk2+avAkK7KN83TbDUE1ixzHRT5WER9a+8vLWlvjRh3dNF9swO34+ieaN46x4D4yRPfheSo3qrqdoDsF/bWEo4zCa+Vzj8qZYrF9C3ISieshb0VHnqW+JEqtyzyrIxjVHkX6gRamSeCaPv8CG0UsdE7WtvV5rt9jov/NN1nHBR6L2hiljg5rbq1lcrw068VabZ4d1Xv8AG0LRR/V1avEATMNzvPyVxh2V61IOYUGy2gUbOZFlfcqsK51DIl91yBL5LAMaWY5aDiq3aSpTGfEBM1v+GNqXf5EeQ3djhMxHkA0CK6+OA==
+     -
+       internal_properties : CAAAAAgAAABDNK4X83ttPQphj5Jut4ySkwrkMXEHpyipZhwviCleg7VLG6tTw0owXXEnNoDvUtUnpcBLj5+s/ihau8WGnsykiuzv8NGIpNUBmQZIMAuJt5qkbZw3Jo0vfhcAvzU82QntMZaDzQWNObvlrbPqrrS2azUC+eIxbcL6FRPqauzDsCOcyL1LJi83lqNgxzSvEQqodAOFaPEeV654/cJuu+HKRnvRbC00Wcm0GQp4KrerUY+YKc4oIDd64nzY2CT4+T8VLn/Q99vUoBsaFeqFFMzQRlpHa3Qf
+    type : 6
+    controls : []
+    code_elements :
+     type_code : 6
+     p_codes : []
+  -
+    name : STC_General_parameters
+    identifier : 0x26e80abc05227c69
+    internal_properties : CAAAAAgAAACf/ZxnpAg8j6EY73N5ya8ekQLg8j673IR9DHtWxeVqQguQmhQTTRKthmdck1499us3hCGQwQFApI/lHEm/PiI9emYRfDsErsijRGdPwJ5P1uf6uIgUXdQ7s3ipHa+3BizE/fZ7v3IwTVJIE0dRiKR8Ubw/JMhgv48PDZRNcrhiF4ap79m9qu0BwgeX3mG+Sy9kU93g8sLpfUsdDYLIpAG6hBwiwJrSulrCQyqyLLSPK3QeIdMHuk9WKtenmZeB06jNkmGM/9lz+PE3o2sbhIlucFU3SqLuNivbOSdv4WzJanN61K8DxzJ2nq5awyOl+zHvKxD9X4OlA7aC2HfGEqDNGKinrqpT3GiOLdWbJwEPRRwo0cXP/pFt+7IewyC8Yxu1qlVncWunCp/DLSRRr4jIHTqrHL+Zipbli73KnC+mUChEAI1p+xVjI5z2/sBFOWt0gEBxX4LJoY70l5Hbl4dli76WkQRJ5CChVoIvYk2wuKUMMVdKXKfr3W72f48uhr5FyHJF
+    properties :
+     x : 6
+     y : 200
+     width : 361
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : EDT_SecondaryBound
+    identifier : 0x26e80abc05237c69
+    internal_properties : CAAAAAgAAAA2aoR282H2U+Xos4wVBZqVo/Sm5YWK3z7Vz1IaWU4lC+GR9b3psCkSQcst9FiFR1+uR4ytM+rKOZ3TjtHjBmBYJMS21dcGxxccpSxIKfqQ037yds5xY7ifcCe0RcSbSv2r2buE3ThfQMBxbNt4FOWjFn2LoTYAvwol2oGvLJX1LA11wslGrV0W8UngxCTYV1x4ikMyHsq2FUyTDXHZjKR9GelL24cm6nvgbV80fWsV+194VbckbY+EC0Dh/v+efi7irWtxBHDX60Fv6mYL/pptByHFeC1e3XHsyYXXdRUrwYCiMmbY6EObpjaYmvsRUg1UzTuGa6gWd1Nxveodak2obMbDLfs0ngsp+wEaMjTT+bAElrxP8t8kQyMr/Ps4QD4XTLeNu3V8YXUPbw95RecNYP+Nk/rx90jX7ns8lKhNONVZJTvYs5t2ATBI4KxkbovMfA5Km59tLDTBaE2OoIO8evoayhlB24es4gcuE4nvxDDo2TzBgfbHxikTCIxGOXgeHKiScFF/jvIDLIAkWk7sb5kz0dxqSqkOll4+NwsyXWuhOqYGeGlNvWAaoJtWW895qPZk1BtxjZe7gA+yWk3ix+UtHjXIaAFjNz5X7rGEsAtMi15n37phPpyz738T73aJi1PExXxiN0Y0dpVllP988Man2v7bS06ezfDDMxp/MEU+DmOu25qoBjuDQGm0z4yc1s3vQsWbbuqRQyA+W/Zm5z3ksJ1BvxDrotb+Vor7uX4ZQ4EYvmOUsn/VI9Qlt7xeqPKSP2/shTM/rKe6UdmHm0Grn0kawbmvZNayORDznjTwSTN0cyD7u1nIidzZ8g4hWMRxzUzI3M81ukjaoh+QKhoG2iIDwACoefhLW3N7Dkk9ZqE3h+XPZQnUmI8lhJskB9dS+P23n2SYjSTt/qhtUcEigIIwcbfpfcYeCEpL0J94IGA6NAVDKT3vsulY3ec/J9DJ9kxnAneuPdQ7TjrIBqGn63D9ALMly64OXk7+1Q8o74tWnmZz0y4ODjn1+yXWl+ZdkWg5aNZZvcHtCwVrMCuYbnmEruqJfanv54mEuPLdB8yg1tl9gkd1uvyIu74nRbcgtkKpykjUHjkGTJZH8QEXfSu91d+hAFwidXNQFbyW3AZej7wAttbdwP/jHBsS4wHzwryLhucP4wf6izRQsTgluJOnHz79/1NvgxoE8qj2rQfc8+D78dSK7ML8q9FS5HGRZvHaNI4o4iKI9WRcgJqANvv2TFE/Gx8rcFmKlWS3ODuzFn7G56/y1yXSs/PYGkpRIygHY4Jk8Z9/7jhRAr3lzF9yNHkaB8EzEdpvYPx2J0fb8rsfoWz/O718LGbiEp5MIIcCZJlZfr/xqUsgQAFzfZcHwvtAK1qkbODTZz6xc7LpoL900NgE9Buu+X1rRRHUbGtEkkuA+Uur
+    properties :
+     x : 6
+     y : 282
+     width : 244
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : EDT_MainBound
+    identifier : 0x26e80abc05247c69
+    internal_properties : CAAAAAgAAAB+KSZABbk1fOUIegJyQYFXk4Nx9ZQ8CLiuoGqRF/ckYIG3bpTxx9ERvXdRkitmKZbVBl9hp29xiXECa34TCLVCGm3n6IeML2jcn2YMdmaEIJ0ZU2TrQnXC1PtpoOMfWrikgtoFCVWBYk9GSKSgb4ALWxhtB2HXD0q5f2RVf9kBmcweqaNbCgTtjcJKpX2pz89cdufX0YRD5EE4DOFjLwqYa3ZvQyjFm7RSAj/vKBZ+niKT0kk+K2XH5FaQ2t5dtiUgaglvmNtjlq5PsIfaH5c3UGgu3dtI2wQC1VeNYI+LJvtwow9uzGwRR2QHRumKjact/df8ZejQ5R8ug0CvOXPV/yTQ8dncL2+9enoU4KTyrjYppLBwL3ifgx2wuLZIMBb8Zp5gOMDUfM7CENEhlXXfJsE3YTzRylzAx7QI/jkuM6yfEQPW4Ub7/F7SvUGRNTp/MSIGUEilEeWiPKUPKWh0viZFb9oSdKNXxYZeID4P6bFnETsUrJAgRl5m1OfARP75ooVYVuNP11HRTzymx/zfxUDqNB9WD2T9iEElGv8LA2DlMuvh1RKhh22B7RnZw14XJy12CLnXFDz8J2rKkRMG7R7V9rmaoIdUPsjVIwaJPdV1WHXmmGMrauR9V5LEWhrJiJG1a1LNOrGBjE903z2vopyM6O67VJiC61NxWNqyEG/ijnM95dUhXOOx0igxzi8ZxwqgjqPaCCeu9A6h30jglh1C1AbCng4EfaX6kQZhV2NLQ7s16RhYN+4wX0MR2bLPrg6kqrRn55buVyPnj8WrMjV5b/SHrOd+7Ws4fmRt3GMmkV/FNH9tWky/68dFrILeGIbB2o1H6F6wOSoPZonCQzZc9JPGJTzRYGsVzotdkL4hCHnuOgoZDAhvGpxN4iH/hTdsf8b+0esPWHLAZEAvPrXEsg3d7FWEas9As/qBuG5wkhwL636TqEB+HrYkb7PYXTRh1f3WrBADrr6ucsgMU6F1tRMg7VF2QM/68QLgf/DIjTVVLY+F9FP3Br6X001xE6SbsJ+6sLvoAKcQ3XGbVTfeRki9lYCsQPiBKLPMNiOhCUqpMc5z9eJE1qkm1xjQM2MgTd0O6AmvlZH1UgaHIqMnN8TMbukM70fY6EfWde9qqji5mDvqHecyTvAtLIdN63/Xf6/gEDJqKpvFS+LMsjqpqF4CrKKmhj4JXoamQMtCw3cf/EdhiBVXOLm63y+BGN9PM7BzqP8PjaSL/VqELzSo5jyomvINRx/IrgYh3lbYk6rPjXvu6mMaUzjOMTbV3dsa6k/wMJD0aviH0dgtLR1gD2LA457jdFmVf59cOMUXpusJetZbT8N6l6DZHo+y0wGlCvHrBTY0bv0pMIRUwSgLThFwno5MnAzY1mokvKMk0hrNeKtQ2z0rSLQ8nyovbads68XkPdU=
+    properties :
+     x : 6
+     y : 254
+     width : 244
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : BTN_Display_the_progress_bar
+    identifier : 0x26e80abc05257c69
+    internal_properties : CAAAAAgAAADZkgybsNMHrDktJ+42DKs6VnA9Bn4PH3OVvj42eqO+iNnpuYXr4y6COXV1K2GQBXYeXqaBd438ISM3Nch+6YV3VOw33+9e/jYXN/RyOoQJGHYQL9LFqGR+v6PZGXV/mkAIANuqEWZQ33jiyPP1S37xIynGU1VZtGuiCqN73zwwYgRRrJOM/PYERTeZiuZovLaITowejIp/dAYX0dHjFA+flNzkbfAVavMvax6m5uqxQcTUuLv3YC6XzlvM3N6rX/CnNUHAmMutKaR2hS4rRKiSasQ5rU64iQS3R+kjnvtG+c3GchwogVYi4EBnoox1pXdEjw6dRq8tbxLgVZGMdIj6oQVywcB6lDs6fbBwWxliz0DkGtqKvFjNXkTYK8jz64OAK2HJkBiDlcgrZf3/Ct1O43wlTsILw4vlQnV+dAkIBs/v+RNlKrZ/qMZs5f9DxuIfdO3iI2f86EOoApi6Ccf4Vm/vtYMTS4/9oNHWc13QTbRGsNXGv5BoccXq3e/HlKfNN0PcAWokV22NZLOoY2+OvpmnsWP9c1lh9YXrmHCyaDK8Z65OktdAEN4gVMdFeNg/5ndYVNNbg613bfSm2hmfthFrgGDbCv3RHG4a9AlwRrm9yCnDGyKTypCqEtySuDazRSy6oKT7OfDsRAwgm7wr4vgFEnjH1JyXs3JimLyV2Lh6+ny3Vs4iz6QVXON7d3th1bgpZgu2pM4t7erSu/mHBIi96Y5gx2jdFmvd0fZ4ByyW4RHwILKqh2i7Jl3X77uu3GE08irqoEtxmPqb5/OOxP7cIxUuHOzKsCg9nDLYJIR5eNA/EvDZGwVZw2lESazqQzdLnxUxrdQwzspJh/Cc0ZrUCAIyNCEY0Hyrjb9uvA2whykpVoVpXorR0d1chFFtIgISwIuZ0TAayzoaCrW7u98XLgkPQOKnxX38H0nVW71fw6Jhpm3kW7Mpu+TaDe96reMwcNQYmdC2bvf15unpqnSErMYBtnHCpHDm5dzg1VaPl4j9fj0Q8ys=
+    properties :
+     x : 263
+     y : 358
+     width : 326
+     height : 45
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         // Type of progress bar
+         nMode is int = RADIO_ProgressBarType=1 ? PROGBAR_SIMPLE ELSE PROGBAR_DOUBLE
+         
+         // Abandon button
+         bAbandon is boolean = (RADIO_Cancel = 1)
+         
+         // Calculate the time
+         nCalculateTime is int = RADIO_CalculateTime=1 ? PROGBAR_TIME_AUTO ELSE PROGBAR_TIME_NONE
+         
+         // Open the progress bar
+         nProgressBarID is int = ProgressBarCreate(nMode,bAbandon,nCalculateTime,EDT_Title_of_progress_bar)
+         
+         // Changes the bounds
+         ProgressBarChangeBound(nProgressBarID,EDT_MainBound)
+         nNbSteps is int = EDT_MainBound
+         
+         IF nMode = PROGBAR_DOUBLE THEN
+         	ProgressBarChangeStep(nProgressBarID,EDT_SecondaryBound)
+         	nNbSteps = EDT_MainBound * EDT_SecondaryBound
+         END
+         
+         // Moves the progress bar forward (in a thread to simulate a process in background)
+         DisplayTestProgressBar(nProgressBarID,nNbSteps)
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_Exit
+    identifier : 0x26e80abc05267c69
+    internal_properties : CAAAAAgAAAClhmm8Txmm1gSzn/Y9ZHx9rPELGX5ZWSD3U9OnJPnWnbUJ7l1yjsM1t8l6KxaHRewEvq/h6kGCLzXT7QgNKEF7P3wZaygPjSydN+M7yOo2vFI9xojHjmPfK8c5TTit3qQt0g9tfuWCDzeHcIW9jLDblmb6zfmIMBamaEbfQ8e84xDMf/vlpgvNx6iAg1ZT/AHwn4k1Hv8WgbDAwsTfg46S1MRtwlqklox+NNEbkeXU006AsyLOxvtRXxYpRv1BnQ9e+dxuakijEEjRGQvyavw49WvxSgaEjRpH4ClPakUFQ9ymcu+OJxCFD9tHtpEm+EIXGByTMNOX3l+RBVyi4vk6mFaW5vZZEAn0LhAgqvPoFTFnrPZ7FknHbwYdGHO9BFnj5zGE0NfOu0Tas502CEvJNqh+ppHEf9iUcxRaeMmVnXg62Yonwehkr8YsxEt/KFquHWbCs5ae3xaF2h5uX0rYdBwnnY6bPDTUwR6yvHQUjg8SX4Fz9CCTHCjpXdwBzA7q4TTOi8DAKMOopPV1QGcSRWqZc7lxeNnw9CyEVpTgBoIBwPTENZm8NGskoitP85uVHSHH674wWx3/MK9w8u39ctXQH5WL7k/FjaqSO2u3WPrRwCA+EiZtM1ygilmVD8h180FEiUk9amv7Ffg65sBnezrBwXeZTdmovDjOMVGNr40fLO/NmX+KRmRHd4QSg7LR2L6wUGjOFRvjox2wd0QG80qnqulgucf21Z7PSXAYKRhDAj6lwF5PS4rV+cVkOCJRlzn1W/XxCQAjGCp8HBTelTudDmpR8g/nFDHE9WGiipKTig021bMuUOd/0ewQaIxrctjSmZE9ZIZ3Z7U97dTKR+vo0M/FfGhi+49UaiB4H7lUOdnpSh1ZXC8Q1z9FLiTBJwpUKj9I0oLOvrWLjZuI/vRspqfTOZL3TtjIK/YuKUQrGJRHS4UBpwXLd0zqO8KI5wqnstJMjQ==
+    properties :
+     x : 727
+     y : 425
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADQZyvpRjJZltgKBVFD+SKMukTEU1n2G2jmPSjnx1ZKdSF2vB36egNKcReVrz/xwpIZdIpZoyUu0CjPxu+MpGLAedmE/39iAmJIcu72BpKoWkpseLXy2lnJGPSMFw==
+        code : |1+
+         ProgressBarCloseAll()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : STC_This_window_is_used_to
+    identifier : 0x26e80abc05297c69
+    internal_properties : CAAAAAgAAAAG6OPxSh1F8XZc73wnU9fCmngihHbC5Fgs0XsYsK2ULJNRXDReI9SWtuTeLi1ohq5XbH0LZ2gYtzpIadBSJoSXvY1ZpAN5eoXKRvGTQ3+6U+7OE94ckBezH1jFXrgyHTkaxj3o5TmqLinrG1GW0Rq4QeYjm8MdHivNiMHyG+OZlFETTWqh6O9aB5lIVZ6h6XCwZEVdMb7CxRGGs6dKazwjJOV7q+XbWHggDMh871M9qgp35R34IK7yE8GaFkwCWvTlXZioR3ypXmvdld43UsHxekXCH36BqcChmCBODlX9+m4cIdtISSV8TFPi54aAKKUH7qVhpMtlWeDw1NCqCKpILh1rjxPivISTENnomnxHfuOLEOjklEPQ28gyvQoqtz7QxOYaFyPH5HoPt48y4uvlSRXi6ovHPPLTZATkauoXoGTmCGagXOudJyS+DJn3BXCeTGZkWPzhnqIehN8ogiLFqEK//BeR5qLDPRG+8Mi4gC5jxPBrofjpJYOzLngf7af0g3UbIk5l9qtEzKfCd7SMATbHYDA8dEiBUDz8xAaz+YmyXfJk4NSHiZKmEf5oCG3NUTb3IoDPuj+Cy+QWQl31xo4zbW9fFoBOGyTVsVb1mOcaIwwoZ+QOQjZUMaysSYUwr6tZLUNdOBLE2uEBSqfld3P181cQS7UPeBIGUfaqgqpEg8inQKp5FgHC077WQ8BtYxSxIBH58dLpl5c15OvFHeDFMaPkcQDhJRV1SYptPCme/qitHKP/oq6dsWmxz9Gj3UJ0KpXSzTE9/fYXHk/nOelHALWrH/Bgvgfl+X+pM2SZJs4ES5bcrFeZgtK19IeH8igTmBMv/rND5kHwIcfJq6NEf5uch3rBzJ8knstWwLU5TT3zh90mYih6Fe+xJU1Wl3K5BEK/VaBreYmZu17EPXXz9A==
+    properties :
+     x : 17
+     y : 17
+     width : 350
+     height : 165
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : SHA_NoName2
+    identifier : 0x26e80abc05277c69
+    internal_properties : CAAAAAgAAAD6BwWcZZcojD+LkMH4EECAPnrbd5fzU42eIKU096L3XYtxHV5fyNtjPy7IRy+vKokD4V4x7AI7aDnLvX0NAtosATbdp+0CfjBiG2eOryBkCKbXR3D7aWzTfw4IOAwSA9+PoO2fCaMeA+wi0wKOkCbTryZ1z0r6/QxjD3lqzl9+YahNoYFAzZbIEGs8yHThSRhroOCCk60BEbQXAYBHZdQR21F8eyfsPGjsN3nYbfBSetoOuVad6glTFFkz2www6DxFSOReEdHSd1oFAJ4JGxe+Vo5tvh7jI98bsivCVsQgMdGfViT1+tJbAOW/x7A37/ZpcB+niLF0mvqoMaKCuhnwDM9cAaUnuI2Lb1qQjxtyKlSQClzryyLWHd0mI7Qowh7b2L2mn/QYi6gWAgQR7AwYw48dn1rDBO7v48LFxI8IOfNnttsdgRxcX6r0OozyEG7T0veA
+    properties :
+     x : 6
+     y : 6
+     width : 374
+     height : 188
+    type : 20
+    code_elements :
+     type_code : 32
+     p_codes : []
+  -
+    name : EDT_Title_of_progress_bar
+    identifier : 0x26e80abc05287c69
+    internal_properties : CAAAAAgAAACvl8pkxOU12E3XNHdLtnOykeV1gFHR55r/AsSJGLtgV9Zvc+CkyQ7Q0cO8ytRXhNrWrlwxhWZG/riTtDVtsmckp582LxS7kYGgG8hELyvDM85spOLsp9Wg+mLzYSsAPbVCpB+eWphJmVMKEZI0MSlkWL+OtEidms1fdPxQGrkZhD93Q42DyPo+njZwz0FIVTMye1ALTGgMOLnD9PIEQEeWiFOu3Thu3/kdb8LfKBiqfC6NI53DGHg2Ng3e36xEBqdzTchZSsgR4ZSRO2qC9j2d5gqV4jVOFdCGl8ODT9vWr1YSurBFeyebXMp4n7bDShtpn3oy1RV+14pc9EiUxvfGAA7atXQt9Ci5j2x28SwmO/zboKgHXcQUnlRRuIePND4mWzeZr5xtP2hf7CZr9xumyCFi2HerGPKTsSq40rAABqlC4mfIpzpC6nJsXcxdN3y14ZFQiLKEwBYx8xq2TZ3hSk2WuESZj7d/LyYyrtiGduYwMUwolyOMIKWm7Yxnv8DSMkYi9Snk1vpwDHskTzGx3EsGsSJv3PyZkmQavcGm9aUGTfJD5gDXHnT1cvoIaTIkqkzkNc8jV9FgWeDfmEa5vNUfgGzZY4sKGtPmrNY3L8N/Lt/TVsTZCDle+KlixWpW4TAaZqILraIkHmPCw4UiZFH6h9Urx0FHLKCHpdeUwZG+OpX6wux3rWPFbqNQ0d0obpeWpa0McjsSRmWRdFsP5k6lsKuGpHldCN7ild74W6tOKEj1aD6W1GtYfu5ZPIFfQCvMOajvCQcwR5as4+i2Iw6FH7oQE+dwHKwRPcY4NSR1H2Lid3JCcfrNO8roZ4D9KQ+LqX3DIHeAyfc+/7YAVCKTKc1oCYyD3EbrW84n/QSaKt0zp2B5kuBus0xZ9c0IsnWRUHv45i/Ri6e+fj2T+c5AxelhsJnypOOJG8Jk7iFzNOnLiluK1V8QG1TG6PNRnAauO/Y5Rfz1zS6niH1Q0Kj/HD1/MhS1+bU5CBu2IL5rn8ZLUOCsvYj17e6/Ig23hb/vj6HifPGWDSv/foXzSszcJdyKNL2+TPHRr7zGSYlwa2QYKwDp9hmeD90xn+9w79qaOFFuYKEBig5jhAMsHqUI/4/gdidEazyMgSOTLl007XAMxnOoD1pi5qGMaDn0DjMmy9r5C7fr4kLPcdPyHf15Nz65eQFIrcvx4euOpdqpkjt1kRx0C2BVo61E9u9Ko/meYeOakXK2NxIY2G+YPSgb5mjS2LAdF9Oxf2/4AD38wlIg2DAkYwgok7ou4IKnx7TaWmAMIjQIdGEHiPG8RA7QSaNdi8frfEfbu2u3ZK4puTrq3wEIWR2hIZAiTd/thB0gXCz59tAoSI55CmkZs0sL0jP0Zf9lhFUOCTjAdAVBlbajgw6Ln5/nowy8G1a0vA==
+    properties :
+     x : 6
+     y : 226
+     width : 361
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAjFWXItEk/EPvcbGR+hALkgRfdOpVtIn+yZNxHnmSRFJegE/AnD2HbGAaMfhGCqfzkryHG9FVhjtF+iQYkZ59QBQ88Okhh0vjCoVhOagox2hvIqrJnU30QK15/ZA==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE MyWindow()
+   -
+     code : |1+
+      
+      
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1+
+      
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1+
+      
+      
+     type : 2
+  procedures :
+   -
+     name : DisplayTestProgressBar
+     internal_properties : CAAAAAgAAACn8E1OH5IocS2HT/uhHGu39IeZnNxyG53LKdTpmaYCvEP7pnYSpFu68EUgBuNQYrTfa+XMwV+ApEmdQ3pTQtTQd++7KGFWGGwWvhsx9XLugDPtQxMo04Gvw3GSd+7m1fOAYGEfIEzpfocslaf0M8FzTf675OnJeOOTGJjPzfK3b1IFNjz4
+     procedure_id : 1650581066016652393
+     type_code : 14
+     code : |1+
+      // Summary: Simulates a process in several steps
+      // Syntax:
+      //DisplayTestProgressBar (<nProgressBarID> is int, <nNbSteps> is int)
+      //
+      // Parameters:
+      //	nProgressBarID (integer): Identifier of the progress bar created by ProgressBarCreate
+      //	nNbSteps (integer): Total number of steps in the simulated process
+      // Return value:
+      // 	None
+      //// Automatic procedure:
+      // The procedure is run manually, during a call in the code
+      // It will be run in a thread (without having to call ThreadExecute), without using HFSQL
+      // 
+      
+      PROCEDURE DisplayTestProgressBar(LOCAL nProgressBarID is int, LOCAL nNbSteps is int)
+      
+      // The duration between two moves of the progress bar is drawn ar random between 50 and 300 ms
+      nPauseDuration is int = Random(5,30)
+      
+      // Simulates a process in several steps
+      FOR n=0 _TO_ nNbSteps
+      	// Moves the progress bar from 1 step
+      	ProgressBarMove(nProgressBarID,1)
+      	// Checks whether the progress bar is still displayed (the progress bar may have been closed by the ProgressBarMove process if the maximum value has been reached)
+      	IF ProgressBarExist(nProgressBarID) = False THEN RETURN
+      	// Waits a little bit
+      	ThreadPause(nPauseDuration)
+      	// Check the cancelation
+      	IF ProgressBarExist(nProgressBarID) _AND_ ProgressBarCancelationRequested(nProgressBarID) THEN
+      		ProgressBarClose(nProgressBarID)
+      		RETURN
+      	END
+      END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAAspXRQsX4kpYpRJzI8SMGEUfXYJhQeqig0H9mPZLI9hoPnkeFEnSQ8t7JVd8VUY9eLyST/2DyAYB+9rK7lbHVOclfSdkhgAQ9dNjlmStKMpPl9
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x1006a0c530e72cd8
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

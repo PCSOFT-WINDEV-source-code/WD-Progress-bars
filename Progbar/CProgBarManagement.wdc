@@ -1,0 +1,296 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CProgBarManagement
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x16e80abe00ed835e
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      CProgBarManagement is Class
+      	
+      PROTECTED
+      	m_nProgresBarID is int			// Identifier of the progress bar
+      	m_sProgressBarTitle is string		// Title displayed in the progress bar
+      	
+      	m_nSimpleUpperBound is int		// Upper bound of main progress bar
+      	m_nSimpleValue is int		// Current value of main progress bar
+      	
+      	m_nProgressBarType is int 		// PROGBAR_SIMPLE or PROGBAR_DOUBLE constant
+      	m_nDoubleUpperBound is int		// Upper bound of secondary progress bar (if used)
+      	m_nDoubleValue is int		// Current value of secondary progress bar (if used)
+      	
+      	m_bAbandonVisible is boolean	// Is the abandon button visible?
+      	m_bAbandonRequested is boolean	// True the Abandon button was clicked by the user
+      	
+      	m_nTimeMode is int 			// Display the time with automatic calculation of remaining time?
+      	
+      	m_dtSimpleCreation is datetime	// Date and time of progress bar creation
+      END
+     type : 131072
+  procedures :
+   -
+     name : Manufacturer
+     procedure_id : 1650581074607768414
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructor(nProgressBarMode is int, bAbandon is boolean, nCalculateTime is int)
+      
+      m_nProgressBarType = nProgressBarMode
+      m_bAbandonVisible = bAbandon
+      m_nTimeMode = nCalculateTime
+      m_nProgresBarID = GetIdentifier()
+      m_dtSimpleCreation = SysDateTime()
+     type : 589824
+   -
+     name : Destructor_
+     procedure_id : 1650581074607833950
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructor()
+      
+     type : 655360
+  properties :
+   -
+     name : ProgresBarID
+     identifier : 0x16e80abe00ee835e
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC ProgresBarID() : int
+         
+         RESULT m_nProgresBarID
+        type : 1966080
+     template_refs : []
+   -
+     name : p_DoubleUpperBound
+     identifier : 0x16e80abe00ef835e
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_DoubleUpperBound() : int
+         
+         RESULT m_nDoubleUpperBound
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_DoubleUpperBound(Value is int)
+         
+         m_nDoubleUpperBound=Value
+        type : 2031616
+     template_refs : []
+   -
+     name : p_SimpleUpperBound
+     identifier : 0x16e80abe00f0835e
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_SimpleUpperBound() : int
+         
+         RESULT m_nSimpleUpperBound
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_SimpleUpperBound(Value is int)
+         
+         m_nSimpleUpperBound=Value
+        type : 2031616
+     template_refs : []
+   -
+     name : p_AbandonVisible
+     identifier : 0x16e80abe00f1835e
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_AbandonVisible() : boolean
+         
+         RESULT m_bAbandonVisible
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_AbandonVisible(Value is boolean)
+         
+         m_bAbandonVisible=Value
+        type : 2031616
+     template_refs : []
+   -
+     name : p_ProgressBarType
+     identifier : 0x16e80abe00f2835e
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_ProgressBarType() : int
+         
+         RESULT m_nProgressBarType
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_ProgressBarType(Value is int)
+         
+         m_nProgressBarType=Value
+        type : 2031616
+     template_refs : []
+   -
+     name : p_TimeMode
+     identifier : 0x16e80abe00f3835e
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_TimeMode() : int
+         
+         RESULT m_nTimeMode
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_TimeMode(Value is int)
+         
+         m_nTimeMode=Value
+        type : 2031616
+     template_refs : []
+   -
+     name : p_Title
+     identifier : 0x16e80abe00f4835e
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_Title() : string
+         
+         RESULT m_sProgressBarTitle
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_Title(Value is string)
+         
+         m_sProgressBarTitle=Value
+        type : 2031616
+     template_refs : []
+   -
+     name : p_SimpleValue
+     identifier : 0x16e80abe00f5835e
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_SimpleValue() : int
+         
+         RESULT m_nSimpleValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_SimpleValue(Value is int)
+         
+         IF Value>m_nSimpleUpperBound THEN
+         	m_nSimpleValue = m_nSimpleUpperBound	
+         ELSE
+         	m_nSimpleValue=Value
+         END
+        type : 2031616
+     template_refs : []
+   -
+     name : p_DoubleValue
+     identifier : 0x16e80abe00f6835e
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_DoubleValue() : int
+         
+         RESULT m_nDoubleValue
+        type : 1966080
+      -
+        code : |1+
+         PROCEDURE PUBLIC p_DoubleValue(Value is int)
+         
+         IF Value>m_nDoubleUpperBound THEN
+         	m_nDoubleValue = m_nDoubleUpperBound	
+         ELSE
+         	m_nDoubleValue=Value
+         END
+        type : 2031616
+     template_refs : []
+   -
+     name : p_AbandonRequested
+     identifier : 0x16e80abe00f7835e
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_AbandonRequested() : boolean
+         
+         RESULT m_bAbandonRequested
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_AbandonRequested(Value is boolean)
+         
+         m_bAbandonRequested=Value
+        type : 2031616
+     template_refs : []
+   -
+     name : p_duSimpleRemainingTime
+     identifier : 0x16e80abe00f8835e
+     type_code : 103
+     p_codes :
+      -
+        code : |1+
+         // Calculates the remaining time according to the time passed since the start of the progress bar and to the number of steps left
+         PROCEDURE PUBLIC p_duSimpleRemainingTime()
+         
+         duLeft is duration
+         IF m_nSimpleValue<m_nSimpleUpperBound THEN
+         	duPassed is duration = SysDateTime() - m_dtSimpleCreation
+         	duLeft..Millisecond = ((m_nSimpleUpperBound - m_nSimpleValue) * (duPassed..InMilliseconds / (m_nSimpleValue+1)))
+         END
+         
+         RESULT duLeft
+        type : 1966080
+      -
+        code : |1+
+         PROCEDURE PUBLIC p_duSimpleRemainingTime(Value)
+         
+        type : 2031616
+     template_refs : []
+   -
+     name : p_duTimePassed
+     identifier : 0x16e80abe00f9835e
+     type_code : 103
+     p_codes :
+      -
+        code : |1+
+         PROCEDURE PUBLIC p_duTimePassed()
+         
+         duPassed is duration = SysDateTime() - m_dtSimpleCreation
+         RESULT duPassed
+        type : 1966080
+      -
+        code : |1+
+         PROCEDURE PUBLIC p_duTimePassed(Value)
+         
+        type : 2031616
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1006a0c530bd2c7b
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
